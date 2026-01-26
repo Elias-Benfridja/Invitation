@@ -26,22 +26,22 @@ function Header() {
             <source src="/Videos/video6023884163138985617.mp4" type="video/mp4" />
         </video>
             <Box sx={{position: 'relative', zIndex: '2', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <Box key={firstLine} component={motion.div} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}}>
+                <Box key={firstLine} component={motion.div} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: 0.5}}>
                 <Typography variant="h4" sx={{color: 'white', textAlign: 'center', whiteSpace: 'pre-line', fontFamily: 'Grenze, serif', fontWeight: '400' , fontSize: '24px', mb: 2}}>
                     {firstLine}
                 </Typography>
                 </Box>
-                <Box key={secondLine} component={motion.div} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: 1}}>
+                <Box key={secondLine} component={motion.div} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: 1.5}}>
                 <Typography variant="h4" sx={{color: 'white', textAlign: 'center', whiteSpace: 'pre-line', fontFamily: "Great Vibes, cursive", fontWeight: '400', fontSize: '64px'}}>
                     {secondLine}
                 </Typography>
                 </Box>
-                <Box key={thirdLine}  component={motion.div} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: 2}}>
+                <Box key={thirdLine}  component={motion.div} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: 2.5}}>
                 <Typography variant="h4" sx={{color: 'white', textAlign: 'center', whiteSpace: 'pre-line', fontFamily: "Great Vibes, cursive", fontWeight: '400', fontSize: '64px'}}>
                     {thirdLine}
                 </Typography>
                 </Box>
-                <Box key={fourthLine} component={motion.div} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: 3}}>
+                <Box key={fourthLine} component={motion.div} initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1, delay: 3.5}}>
                 <Typography variant="h4" sx={{color: 'white', textAlign: 'center', whiteSpace: 'pre-line', fontFamily: "Great Vibes, cursive", fontWeight: '400', fontSize: '64px'}}>
                     {fourthLine}
                 </Typography>
