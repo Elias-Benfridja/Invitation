@@ -1,26 +1,27 @@
-import Box from "@mui/material/Box"
-import { motion, useAnimation } from "framer-motion"
-import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
-import { Typography } from "@mui/material"
+import Box from "@mui/material/Box";
+import { motion, useAnimation } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { Typography } from "@mui/material";
+import PanToolAltIcon from "@mui/icons-material/PanToolAlt";
 
 function EnvelopePage() {
-  const [started, setStarted] = useState(false)
-  const controls = useAnimation()
-  const navigate = useNavigate()
+  const [started, setStarted] = useState(false);
+  const controls = useAnimation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (started) {
       controls.start({
         transform: "translate(-50%, -50%) translateY(-10px)",
         transition: { duration: 2 },
-      })
+      });
     }
-  }, [started, controls])
+  }, [started, controls]);
 
   const handleFadeComplete = () => {
-    navigate("/info")
-  }
+    navigate("/info");
+  };
 
   return (
     <Box
@@ -31,17 +32,39 @@ function EnvelopePage() {
         background: "#ffffffff",
         overflow: "hidden",
         cursor: "pointer",
-        WebkitTapHighlightColor: "transparent"
+        WebkitTapHighlightColor: "transparent",
       }}
       onClick={() => setStarted(true)}
     >
+      {/* Centered clickable hand icon */}
+      <Box
+        sx={{
+          position: "absolute",
+          top: "55%",
+          left: "45%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 20,
+          pointerEvents: "none", // Allows clicks to pass through
+          userSelect: "none",
+          animation: "pulse 2s infinite",
+        }}
+      >
+        <PanToolAltIcon
+          sx={{
+            fontSize: 40,
+            color: "#000000",
+            opacity: 1,
+          }}
+        />
+      </Box>
+
       {/* White fade overlay */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: started ? 1 : 0 }}
         transition={{ duration: 2 }}
         onAnimationComplete={() => {
-          if (started) handleFadeComplete()
+          if (started) handleFadeComplete();
         }}
         style={{
           position: "absolute",
@@ -115,8 +138,26 @@ function EnvelopePage() {
       >
         You're specially invited!
       </Typography>
+
+      {/* Global pulse animation CSS */}
+      <style>{`
+        @keyframes pulse {
+          0% {
+            opacity: 0.8;
+            transform: scale(1);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.1);
+          }
+          100% {
+            opacity: 0.8;
+            transform: scale(1);
+          }
+        }
+      `}</style>
     </Box>
-  )
+  );
 }
 
-export default EnvelopePage
+export default EnvelopePage;
