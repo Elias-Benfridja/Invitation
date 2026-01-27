@@ -37,26 +37,28 @@ function EnvelopePage() {
       onClick={() => setStarted(true)}
     >
       {/* Centered clickable hand icon */}
-      <Box
-        sx={{
-          position: "absolute",
-          top: "55%",
-          left: "45%",
-          transform: "translate(-50%, -50%)",
-          zIndex: 20,
-          pointerEvents: "none", // Allows clicks to pass through
-          userSelect: "none",
-          animation: "pulse 2s infinite",
-        }}
-      >
-        <PanToolAltIcon
-          sx={{
-            fontSize: 40,
-            color: "#000000",
-            opacity: 1,
-          }}
-        />
-      </Box>
+      {!started && (
+  <Box
+    sx={{
+      position: "absolute",
+      top: "55%",
+      left: "45%",
+      transform: "translate(-50%, -50%)",
+      zIndex: 50,
+      pointerEvents: "none",
+      userSelect: "none",
+      animation: "pulse 2s infinite",
+    }}
+  >
+    <PanToolAltIcon
+      sx={{
+        fontSize: 40,
+        color: "#000000",
+        opacity: 0.8,
+      }}
+    />
+  </Box>
+)}
 
       {/* White fade overlay */}
       <motion.div
