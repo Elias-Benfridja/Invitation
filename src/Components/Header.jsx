@@ -22,7 +22,7 @@ function Header() {
   return (
     <div>  
         <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100vw', height: '100vh', background: "#0C2B4E", position: 'relative', overflow: 'hidden'}}>
-        <video autoPlay loop muted style={{position: 'absolute', width: '100vw', height: '100vh', objectFit: 'fill',zIndex: '1'}}>
+        <video playsInline disablePictureInPicture autoPlay loop muted style={{position: 'absolute', width: '100vw', height: '100vh', objectFit: 'fill',zIndex: '1'}} poster='/Pictures/public/Pictures/Screenshot from 2026-01-27 17-18-13.png'>
             <source src="/Videos/video6023884163138985617.mp4" type="video/mp4" />
         </video>
             <Box sx={{position: 'relative', zIndex: '2', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
