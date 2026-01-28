@@ -48,14 +48,14 @@ function Header() {
         loop
         muted
         preload="auto"
-        poster="/Pictures/Screenshot-from-2026-01-27-17-18-13.png"
+        poster="/Pictures/Screenshot from 2026-01-27 17-18-13.png"
         style={{
           position: "absolute",
           inset: 0,
           width: "100vw",
           height: "100vh",
           objectFit: "cover",
-          zIndex: 1,
+          zIndex: 2,
           pointerEvents: "none"
         }}
       >
@@ -64,7 +64,7 @@ function Header() {
           type="video/mp4"
         />
       </video>
-
+      {/*Box component={"img"} src="/Pictures/Screenshot from 2026-01-27 17-18-13.png" alt="Poster" sx={{ position: 'absolute', inset: 0, width: '100vw', height: '100vh', objectFit: 'cover', zIndex: 1, pointerEvents: 'none' }}></Box*/}
       {/* TEXT LAYER */}
       <Box
         sx={{
