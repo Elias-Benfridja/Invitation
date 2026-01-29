@@ -7,7 +7,7 @@ function App() {
     <>
       {/* Hidden video to preload */}
       <video
-        src="/Videos/video6023884163138985617.mp4"
+        src="/Videos/output.mp4"
         preload="auto"
         style={{ display: 'none' }}
       />

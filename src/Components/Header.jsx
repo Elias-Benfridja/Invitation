@@ -48,7 +48,6 @@ function Header() {
         loop
         muted
         preload="auto"
-        poster="/Pictures/Screenshot from 2026-01-27 17-18-13.png"
         style={{
           position: "absolute",
           inset: 0,
@@ -60,7 +59,7 @@ function Header() {
         }}
       >
         <source
-          src="/Videos/video6023884163138985617.mp4"
+          src="/Videos/output.mp4"
           type="video/mp4"
         />
       </video>
