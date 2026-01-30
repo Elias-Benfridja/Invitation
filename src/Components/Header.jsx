@@ -1,7 +1,7 @@
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { motion } from 'framer-motion';
-import { useState, useEffect, useRef } from 'react';
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import { motion } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
 
 function Header() {
   const videoRef = useRef(null);
@@ -10,7 +10,7 @@ function Header() {
   const [secondLine, setSecondLine] = useState("Hakim\n");
   const [thirdLine, setThirdLine] = useState("&\n");
   const [fourthLine, setFourthLine] = useState("Maissa");
-
+  const [fontToggle, setFontToggle] = useState(false);
   useEffect(() => {
     // 🔹 Start video right after first paint (poster shows)
     requestAnimationFrame(() => {
@@ -18,10 +18,11 @@ function Header() {
     });
 
     const timeout = setTimeout(() => {
-      setFirstLine("Save the date\n23/05/2026\n");
-      setSecondLine("Welcome to our happily ever after");
+      setFirstLine("Welcome to our happily ever after");
+      setSecondLine("Save the Date\n23/05/2026\n");
       setThirdLine("");
       setFourthLine("");
+      setFontToggle(true);
     }, 5000);
 
     return () => clearTimeout(timeout);
@@ -30,15 +31,15 @@ function Header() {
   return (
     <Box
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '100vw',
-        height: '100vh',
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100vw",
+        height: "100vh",
         background: "#0C2B4E",
-        position: 'relative',
-        overflow: 'hidden'
+        position: "relative",
+        overflow: "hidden",
       }}
     >
       <video
@@ -55,23 +56,32 @@ function Header() {
           height: "100vh",
           objectFit: "cover",
           zIndex: 2,
-          pointerEvents: "none"
+          pointerEvents: "none",
         }}
       >
-        <source
-          src="/Videos/output.mp4"
-          type="video/mp4"
-        />
+        <source src="/Videos/output.mp4" type="video/mp4" />
       </video>
-      {/*Box component={"img"} src="/Pictures/Screenshot from 2026-01-27 17-18-13.png" alt="Poster" sx={{ position: 'absolute', inset: 0, width: '100vw', height: '100vh', objectFit: 'cover', zIndex: 1, pointerEvents: 'none' }}></Box*/}
-      {/* TEXT LAYER */}
+      <Box
+        component={"img"}
+        src="/Pictures/Screenshot from 2026-01-27 17-18-13.png"
+        alt="Poster"
+        sx={{
+          position: "absolute",
+          inset: 0,
+          width: "100vw",
+          height: "100vh",
+          objectFit: "cover",
+          zIndex: 1,
+          pointerEvents: "none",
+        }}
+      ></Box>
       <Box
         sx={{
-          position: 'relative',
+          position: "relative",
           zIndex: 2,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center'
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
         <Box
@@ -83,12 +93,12 @@ function Header() {
         >
           <Typography
             sx={{
-              color: 'white',
-              textAlign: 'center',
-              whiteSpace: 'pre-line',
-              fontFamily: 'Grenze, serif',
-              fontSize: '24px',
-              mb: 2
+              color: "white",
+              textAlign: "center",
+              whiteSpace: "pre-line",
+              fontFamily: fontToggle ? "Great Vibes, cursive" : "Grenze, serif",
+              fontSize: fontToggle ? "64px" : "24px",
+              mb: 2,
             }}
           >
             {firstLine}
@@ -104,11 +114,11 @@ function Header() {
         >
           <Typography
             sx={{
-              color: 'white',
-              textAlign: 'center',
-              whiteSpace: 'pre-line',
-              fontFamily: "Great Vibes, cursive",
-              fontSize: '64px'
+              color: "white",
+              textAlign: "center",
+              whiteSpace: "pre-line",
+              fontFamily: fontToggle ? "Grenze, serif" : "Great Vibes, cursive",
+              fontSize: fontToggle ? "24px" : "64px",
             }}
           >
             {secondLine}
@@ -124,11 +134,11 @@ function Header() {
         >
           <Typography
             sx={{
-              color: 'white',
-              textAlign: 'center',
-              whiteSpace: 'pre-line',
+              color: "white",
+              textAlign: "center",
+              whiteSpace: "pre-line",
               fontFamily: "Great Vibes, cursive",
-              fontSize: '64px'
+              fontSize: "64px",
             }}
           >
             {thirdLine}
@@ -144,11 +154,11 @@ function Header() {
         >
           <Typography
             sx={{
-              color: 'white',
-              textAlign: 'center',
-              whiteSpace: 'pre-line',
+              color: "white",
+              textAlign: "center",
+              whiteSpace: "pre-line",
               fontFamily: "Great Vibes, cursive",
-              fontSize: '64px'
+              fontSize: "64px",
             }}
           >
             {fourthLine}

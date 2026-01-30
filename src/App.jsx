@@ -9,7 +9,7 @@ function App() {
       <video
         src="/Videos/output.mp4"
         preload="auto"
-        style={{ display: 'none' }}
+        style={{ display: "none" }}
       />
 
       {/* Your routes */}
