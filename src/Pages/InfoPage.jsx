@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import Header from '../Components/Header.jsx';
 import Location from '../Components/Location.jsx';
 import { useEffect, useRef } from 'react';
+import FadingAudio from '../Components/FadingAudio.jsx';
 
 function InfoPage() {
   const videoRef = useRef(null);
@@ -18,6 +19,7 @@ function InfoPage() {
     <div>
       <Box sx={{width: '100vw', height: 'fit-content', background: "#0C2B4E", display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <Header />
+        <FadingAudio src={"/Audio/output.m4a"} />
         <Location ref={videoRef} />
       </Box>
     </div>
