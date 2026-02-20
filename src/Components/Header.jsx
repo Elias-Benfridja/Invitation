@@ -11,19 +11,20 @@ function Header() {
   const [thirdLine, setThirdLine] = useState("&\n");
   const [fourthLine, setFourthLine] = useState("Maissa");
   const [fontToggle, setFontToggle] = useState(false);
+
   useEffect(() => {
-    // 🔹 Start video right after first paint (poster shows)
     requestAnimationFrame(() => {
       videoRef.current?.play();
     });
 
+    // 🔹 Triggers exactly at 12 seconds
     const timeout = setTimeout(() => {
       setFirstLine("Welcome to our happily ever after");
-      setSecondLine("Save the Date\n23/05/2026\n");
-      setThirdLine("");
+      setSecondLine("Save the Date\n");
+      setThirdLine("23/05/2026\n");
       setFourthLine("");
       setFontToggle(true);
-    }, 5000);
+    }, 11000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -89,7 +90,7 @@ function Header() {
           component={motion.div}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
+          transition={{ duration: 2, delay: 2 }} // Starts at 2s, ends at 4s
         >
           <Typography
             sx={{
@@ -110,7 +111,7 @@ function Header() {
           component={motion.div}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
+          transition={{ duration: 2, delay: 4 }} // Starts at 4s, ends at 6s
         >
           <Typography
             sx={{
@@ -130,15 +131,15 @@ function Header() {
           component={motion.div}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2.5 }}
+          transition={{ duration: 2, delay: 6 }} // Starts at 6s, ends at 8s
         >
           <Typography
             sx={{
               color: "white",
               textAlign: "center",
               whiteSpace: "pre-line",
-              fontFamily: "Great Vibes, cursive",
-              fontSize: "64px",
+              fontFamily: fontToggle ? "Grenze, serif" : "Great Vibes, cursive",
+              fontSize: fontToggle ? "34px" : "64px",
             }}
           >
             {thirdLine}
@@ -150,7 +151,7 @@ function Header() {
           component={motion.div}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 3.5 }}
+          transition={{ duration: 2, delay: 8 }} // Starts at 8s, ends at 10s
         >
           <Typography
             sx={{

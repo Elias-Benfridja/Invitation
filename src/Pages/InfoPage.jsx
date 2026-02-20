@@ -13,7 +13,7 @@ function InfoPage() {
     useEffect(() => {
         const timer = setTimeout(() => {
             videoRef.current?.scrollIntoView({ behavior: "smooth" });
-        }, 9000);
+        }, 22000);
     }, []);
   return (
     <div>
