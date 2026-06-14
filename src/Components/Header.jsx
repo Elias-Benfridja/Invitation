@@ -102,8 +102,8 @@ function Header() {
 
               textAlign: "center",
               whiteSpace: "pre-line",
-              fontFamily: fontToggle ? "Great Vibes, cursive" : "Grenze, serif",
-              fontSize: fontToggle ? "36px" : "24px",
+              fontFamily: fontToggle ? "Grenze, serif" : "Grenze, serif",
+              fontSize: fontToggle ? "24px" : "24px",
               mb: 2,
             }}
           >
