@@ -99,7 +99,6 @@ function Header() {
               color: "#ffffff",
               textShadow: "0 1px 5px rgba(0,0,0,0.8)",
               fontWeight: 500,
-
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: fontToggle ? "Grenze, serif" : "Grenze, serif",
