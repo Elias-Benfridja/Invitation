@@ -97,7 +97,7 @@ function Header() {
           <Typography
             sx={{
               color: "#ffffff",
-              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+              textShadow: "0 1px 5px rgba(0,0,0,0.8)",
               fontWeight: 500,
 
               textAlign: "center",
@@ -121,7 +121,7 @@ function Header() {
           <Typography
             sx={{
               color: "#ffffff",
-              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+              textShadow: "0 1px 5px rgba(0,0,0,0.8)",
               fontWeight: 500,
 
               textAlign: "center",
@@ -144,7 +144,7 @@ function Header() {
           <Typography
             sx={{
               color: "#ffffff",
-              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+              textShadow: "0 1px 5px rgba(0,0,0,0.8)",
               fontWeight: 500,
 
               textAlign: "center",
@@ -167,7 +167,7 @@ function Header() {
           <Typography
             sx={{
               color: "#ffffff",
-              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+              textShadow: "0 1px 5px rgba(0,0,0,0.8)",
               fontWeight: 500,
               textAlign: "center",
               whiteSpace: "pre-line",
