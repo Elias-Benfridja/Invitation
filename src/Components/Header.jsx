@@ -94,7 +94,7 @@ function Header() {
         >
           <Typography
             sx={{
-              color: "white",
+              color: "#2B2B2B",
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: fontToggle ? "Great Vibes, cursive" : "Grenze, serif",
@@ -115,7 +115,7 @@ function Header() {
         >
           <Typography
             sx={{
-              color: "white",
+              color: "#2B2B2B",
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: fontToggle ? "Grenze, serif" : "Great Vibes, cursive",
@@ -135,7 +135,7 @@ function Header() {
         >
           <Typography
             sx={{
-              color: "white",
+              color: "#2B2B2B",
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: fontToggle ? "Grenze, serif" : "Great Vibes, cursive",
@@ -155,7 +155,7 @@ function Header() {
         >
           <Typography
             sx={{
-              color: "white",
+              color: "#2B2B2B",
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: "Great Vibes, cursive",
