@@ -6,10 +6,10 @@ import { useState, useEffect, useRef } from "react";
 function Header() {
   const videoRef = useRef(null);
 
-  const [firstLine, setFirstLine] = useState("We are getting married");
-  const [secondLine, setSecondLine] = useState("Hakim\n");
+  const [firstLine, setFirstLine] = useState("Là où commence notre plus belle histoire commence");
+  const [secondLine, setSecondLine] = useState("Alaeddin\n");
   const [thirdLine, setThirdLine] = useState("&\n");
-  const [fourthLine, setFourthLine] = useState("Maissa");
+  const [fourthLine, setFourthLine] = useState("Sana");
   const [fontToggle, setFontToggle] = useState(false);
 
   useEffect(() => {
@@ -19,10 +19,10 @@ function Header() {
 
     // 🔹 Triggers exactly at 12 seconds
     const timeout = setTimeout(() => {
-      setFirstLine("Welcome to our happily ever after");
-      setSecondLine("Save the Date\n");
-      setThirdLine("23/05/2026\n");
-      setFourthLine("");
+      setFirstLine("Entourés de notre famille et de nos amis, nous allons nous dire Oui");
+      setSecondLine("Soyez témoins de notre bonheur\n");
+      setThirdLine("Le 20-06-2026\n");
+      setFourthLine("Location : salle blanc blanc mohcine 1 a partir de 18.30");
       setFontToggle(true);
     }, 11000);
 

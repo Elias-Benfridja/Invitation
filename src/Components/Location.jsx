@@ -36,9 +36,8 @@ const Location = forwardRef(function Location(props, ref) {
           <br /> "salle les palmiers" - taher
           <br /> A partir de 18:30
         </h2>
-
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.1282375869887!2d5.886086275144297!3d36.767490972256496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f25dc97520184f%3A0x3837d42bd59c23e9!2z2YLYp9i52Kkg2KfZhNit2YHZhNin2Kog2KfZhNmG2K7ZitmE!5e0!3m2!1sfr!2sdz!4v1769201950876!5m2!1sfr!2sdz"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3194.1245768293584!2d5.7441286!3d36.8155346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f25fece22f14e3%3A0xf81cf416a279a5c1!2sSalle%20des%20f%C3%AAtes%20la%20Reine%20blanc%20blanc!5e0!3m2!1sen!2sdz!4v1781462948702!5m2!1sen!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           width="100%"
           height="250"
           style={{ border: 0 }}
