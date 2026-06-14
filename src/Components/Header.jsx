@@ -6,7 +6,9 @@ import { useState, useEffect, useRef } from "react";
 function Header() {
   const videoRef = useRef(null);
 
-  const [firstLine, setFirstLine] = useState("Là où commence notre plus belle histoire commence");
+  const [firstLine, setFirstLine] = useState(
+    "Là où commence notre plus belle histoire commence",
+  );
   const [secondLine, setSecondLine] = useState("Alaeddin\n");
   const [thirdLine, setThirdLine] = useState("&\n");
   const [fourthLine, setFourthLine] = useState("Sana");
@@ -94,11 +96,14 @@ function Header() {
         >
           <Typography
             sx={{
-              color: "#2B2B2B",
+              color: "#ffffff",
+              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+              fontWeight: 500,
+
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: fontToggle ? "Great Vibes, cursive" : "Grenze, serif",
-              fontSize: fontToggle ? "24px" : "24px",
+              fontSize: fontToggle ? "36px" : "24px",
               mb: 2,
             }}
           >
@@ -115,7 +120,10 @@ function Header() {
         >
           <Typography
             sx={{
-              color: "#2B2B2B",
+              color: "#ffffff",
+              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+              fontWeight: 500,
+
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: fontToggle ? "Grenze, serif" : "Great Vibes, cursive",
@@ -135,7 +143,10 @@ function Header() {
         >
           <Typography
             sx={{
-              color: "#2B2B2B",
+              color: "#ffffff",
+              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+              fontWeight: 500,
+
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: fontToggle ? "Grenze, serif" : "Great Vibes, cursive",
@@ -155,7 +166,9 @@ function Header() {
         >
           <Typography
             sx={{
-              color: "#2B2B2B",
+              color: "#ffffff",
+              textShadow: "0 1px 3px rgba(0,0,0,0.8)",
+              fontWeight: 500,
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: "Great Vibes, cursive",
