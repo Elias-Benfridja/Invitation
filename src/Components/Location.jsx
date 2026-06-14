@@ -33,7 +33,7 @@ const Location = forwardRef(function Location(props, ref) {
           }}
         >
           Location:
-          <br /> "salle les palmiers" - taher
+          <br /> "salle blanc blanc mohcine 1" - jijel
           <br /> A partir de 18:30
         </h2>
         <iframe

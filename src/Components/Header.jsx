@@ -19,10 +19,10 @@ function Header() {
 
     // 🔹 Triggers exactly at 12 seconds
     const timeout = setTimeout(() => {
-      setFirstLine("Entourés de notre famille et de nos amis, nous allons nous dire Oui");
-      setSecondLine("Soyez témoins de notre bonheur\n");
-      setThirdLine("Le 20-06-2026\n");
-      setFourthLine("Location : salle blanc blanc mohcine 1 a partir de 18.30");
+      setFirstLine("Entourés de notre famille et de nos amis");
+      setSecondLine("nous allons nous dire Oui\n");
+      setThirdLine("Soyez témoins de notre bonheur\n");
+      setFourthLine("Le 20-06-2026");
       setFontToggle(true);
     }, 11000);
 
