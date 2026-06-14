@@ -127,7 +127,7 @@ function Header() {
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: fontToggle ? "Grenze, serif" : "Great Vibes, cursive",
-              fontSize: fontToggle ? "24px" : "64px",
+              fontSize: fontToggle ? "24px" : "24px",
             }}
           >
             {secondLine}
@@ -150,7 +150,7 @@ function Header() {
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: fontToggle ? "Grenze, serif" : "Great Vibes, cursive",
-              fontSize: fontToggle ? "34px" : "64px",
+              fontSize: fontToggle ? "24px" : "24px",
             }}
           >
             {thirdLine}
@@ -172,7 +172,7 @@ function Header() {
               textAlign: "center",
               whiteSpace: "pre-line",
               fontFamily: "Great Vibes, cursive",
-              fontSize: "64px",
+              fontSize: "24px",
             }}
           >
             {fourthLine}
