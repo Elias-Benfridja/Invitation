@@ -48,6 +48,7 @@ function Header() {
       <video
         ref={videoRef}
         playsInline
+        autoPlay
         disablePictureInPicture
         loop
         muted
